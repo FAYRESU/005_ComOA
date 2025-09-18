@@ -16,29 +16,15 @@ function App() {
   }, []);
 
   return (
-    <>
-      {message && <p style={{ textAlign: "center" }}>{message}</p>}
-      <div style={{ textAlign: "center", marginTop: "20%" }}>
+    <div className="container">
+      <div className="card">
+        {message && <p className="message">{message}</p>}
         <h1>React + Express Demo</h1>
-        <button
-          onClick={handleClick}
-          style={{
-            padding: "10px 20px",
-            fontSize: "18px",
-            backgroundColor: "#4CAF50",
-            color: "white",
-            border: "none",
-            borderRadius: "5px",
-            cursor: "pointer",
-            transition: "background-color 0.3s ease",
-          }}
-          onMouseOver={(e) => (e.target.style.backgroundColor = "#45a049")}
-          onMouseOut={(e) => (e.target.style.backgroundColor = "#4CAF50")}
-        >
+        <button onClick={handleClick} className="btn">
           คลิกที่นี่
         </button>
       </div>
-    </>
+    </div>
   );
 }
 
