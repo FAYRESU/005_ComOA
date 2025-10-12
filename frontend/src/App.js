@@ -24,7 +24,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Message from backend: <strong>{message}</strong>
-        p>
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
